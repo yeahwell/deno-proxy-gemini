@@ -1,6 +1,6 @@
 Deno.serve(async (req) => {
   const url = new URL(req.url)
-  url.hostname = 'api.openai.com'
+  url.hostname = 'generativelanguage.googleapis.com'
   return fetch(url, {
     method: req.method,
     headers: {
